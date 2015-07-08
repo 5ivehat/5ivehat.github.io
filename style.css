@@ -68,6 +68,19 @@ a{
 }
 
 
+/* Background Styles */
+
+.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
+	-webkit-background-size: auto!important;
+	-moz-background-size: auto!important;
+	-o-background-size: auto!important;
+	background-size: auto!important;
+}
+.bg-repeat{
+	background:repeat;
+}
+
+
 /* Dark theme */
 
 .d-bloc{
@@ -158,7 +171,12 @@ a{
 
 /* Bloc text custom styling */
 
-#bloc-3 h4{
+#section-1 h1{
+	font-size: 65px;
+	line-height: 70px;
+	font-family: Montserrat;
+}
+#bloc-4 h4{
 	font-size: 12px;
 }
 
@@ -406,8 +424,16 @@ iframe{
 .bgc-white{
 	background-color:#ffffff;
 }
+.bgc-paynes-grey{
+	background-color:#414165;
+}
 .bgc-dark-jungle-green{
 	background-color:#23282A;
+}
+/* Text colour styles */
+
+.tc-white{
+	color:#ffffff!important;
 }
 /* Link colour styles */
 
@@ -425,6 +451,9 @@ iframe{
 }
 .bg-hunk-box-bg-1680{
 	background-image:url('img/hunk-box-bg-1680.png');
+}
+.bg-squared-d-bg{
+	background-image:url('img/squared-d-bg.png');
 }
 
 
