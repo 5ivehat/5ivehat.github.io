@@ -158,17 +158,6 @@ a{
 
 /* Bloc text custom styling */
 
-#hero-bloc h1{
-	font-weight: 600;
-	font-family: Montserrat;
-	font-size: 55px;
-	line-height: 60px;
-}
-#hero-bloc h3{
-	font-weight: 300;
-	font-family: Montserrat;
-	font-size: 25px;
-}
 #bloc-3 h4{
 	font-size: 12px;
 }
@@ -320,17 +309,9 @@ nav .caret{
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
-.mg-sm{
-	margin-top:10px;
-	margin-bottom:5px;
-}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
-}
-.mg-lg{
-	margin-top:10px;
-	margin-bottom:40px;
 }
 
 /* = Buttons
@@ -352,12 +333,17 @@ button{
 	outline: none!important;
 }
 
-.btn-xl{
-	padding: 16px 40px;
-	font-size: 28px;
+.a-btn{
+	padding: 6px 10px 6px 0;
+	line-height: 1.42857143;
+	display:inline-block;
 }
-.icon-spacer{
-	margin-right:5px;
+.text-center .a-btn{
+	padding: 6px 0;
+}
+.a-block{
+	width:100%;
+	text-align: left;
 }
 .dropdown a .caret{
 	margin:0 0 0 5px}
@@ -368,12 +354,7 @@ button{
 }
 
 
-/* = Text & Icon Styles
--------------------------------------------------------------- */
-.sm-shadow{
-	text-shadow:0 1px 2px rgba(0,0,0,.3);
-}
-
+NaN
 
 .panel-sq, .panel-sq .panel-heading, .panel-sq .panel-footer{
 	border-radius:0;
@@ -428,13 +409,13 @@ iframe{
 .bgc-dark-jungle-green{
 	background-color:#23282A;
 }
-/* Text colour styles */
+/* Link colour styles */
 
-.tc-black{
+.ltc-black{
 	color:#000000!important;
 }
-.tc-dark-jungle-green{
-	color:#23282A!important;
+.ltc-black:hover{
+	color:#000000!important;
 }
 
 /* Bloc image backgrounds */
