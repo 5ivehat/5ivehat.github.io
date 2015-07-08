@@ -15,14 +15,20 @@ a:hover{text-decoration: none; cursor:pointer;}
 button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari */
 
 
-   
+a{
+	color:lor:#23282A!important;
+}
 
+ a:hover{
+	color:#000000!important;
+	 text-decoration: none;
+	 cursor:pointer;
+}
 
 
 
 /* Globals type styling */
-   
- h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+    h1, h2, h3, h4, h5, h6, p, label, .btn, a{
 	font-family:"Helvetica";
 }
 
@@ -153,13 +159,15 @@ button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari 
 /* Bloc text custom styling */
 
 #hero-bloc h1{
-	font-size:50px;
+	font-weight: 600;
+	font-family: Montserrat;
+	font-size: 55px;
+	line-height: 60px;
 }
 #hero-bloc h3{
-	font-size:30px;
-}
-#bloc-2 h3{
-	line-height:50px;
+	font-weight: 300;
+	font-family: Montserrat;
+	font-size: 25px;
 }
 #bloc-3 h4{
 	font-size: 12px;
@@ -312,9 +320,17 @@ nav .caret{
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
+}
+.mg-lg{
+	margin-top:10px;
+	margin-bottom:40px;
 }
 
 /* = Buttons
@@ -336,23 +352,28 @@ button{
 	outline: none!important;
 }
 
-.btn-wire{
-	background:transparent!important;
-	border:2px solid transparent;
-}
-.btn-wire:hover{
-	background:transparent!important;
-	border:2px solid transparent;
-}
 .btn-xl{
 	padding: 16px 40px;
 	font-size: 28px;
 }
+.icon-spacer{
+	margin-right:5px;
+}
 .dropdown a .caret{
 	margin:0 0 0 5px}
+/* = Icons
+-------------------------------------------------------------- */
+.icon-lg{
+	font-size:60px!important;
+}
 
 
-NaN
+/* = Text & Icon Styles
+-------------------------------------------------------------- */
+.sm-shadow{
+	text-shadow:0 1px 2px rgba(0,0,0,.3);
+}
+
 
 .panel-sq, .panel-sq .panel-heading, .panel-sq .panel-footer{
 	border-radius:0;
@@ -375,6 +396,27 @@ iframe{
 	border:0;
 }
 
+
+/* ScrollToTop button */
+
+.scrollToTop{
+	width:40px;
+	height:40px;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	opacity: 0;
+	z-index: 500;
+	transition: all .3s ease-in-out;
+}
+.scrollToTop span{
+	margin-top: 6px;
+}
+.showScrollTop{
+	font-size: 14px;
+	opacity: 1;
+}
+
 /* = Custom Colour Styling
 -------------------------------------------------------------- */
 
@@ -383,13 +425,26 @@ iframe{
 .bgc-white{
 	background-color:#ffffff;
 }
-.bgc-paynes-grey{
-	background-color:#414165;
-}
 .bgc-dark-jungle-green{
 	background-color:#23282A;
 }
+/* Text colour styles */
 
+.tc-black{
+	color:#000000!important;
+}
+.tc-dark-jungle-green{
+	color:#23282A!important;
+}
+
+/* Bloc image backgrounds */
+
+.bg-hunk-logo{
+	background-image:url('img/hunk-logo.png');
+}
+.bg-hunk-box-bg-1680{
+	background-image:url('img/hunk-box-bg-1680.png');
+}
 
 
 
